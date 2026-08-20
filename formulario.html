@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadrastro</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-main">
+            <h1 class="nav-brand">Formulário de Inscrição/Cadastro</h1>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="dados">
+            <h2>1.Dados Pessoais</h2>
+            <form action="cadastrados.html">
+                <div>
+                    <label for="ctrl-name">Nome Completo*</label>
+                    <input type="text" name="nome" id="name" placeholder="Ex: Layssa Mello" required>
+                </div>
+                <div>
+                    <label for="ctrl-email">E-mail*</label>
+                    <input type="email" name="email" id="email" placeholder="Ex: layssa@gmail.com" required>
+                </div>
+                <div>
+                    <label for="ctrl-telefone">Telefone/Whatsapp</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Ex: (55) 97854-7892"
+                        pattern="\[0-9]\{2}\s?[0-9\]{4,5}-?[0-9\]{4}">
+                </div>
+                <div>
+                    <label for="ctrl-nascimento">Data de nascimento*</label>
+                    <input type="date" id="nascimento" name="nascimento" required>"
+                </div>
+            </form>
+
+        </section>
+        <section id="perfil">
+            <h2>2.Preferência e Perfil</h2>
+            <form action="cadastrados.html">
+                <div>
+                    <label for="ctrl-areas">Áreas de Interesse*:</label>
+                    <select name="areas" id="ctrl-areas" required>
+                        <option value="">Selecione áreas de interesse</option>
+                        <option value=1>Front-end</option>
+                        <option value="Back-end">Back-end</option>
+                        <option value="full-stalk">Full-stalk</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ctrl-nivel">Nivel de Experiência:</label>
+                    <div>
+                        <label for="iniciante">Iniciante</label>
+                        <input type="radio" name="nivel" id="ctrl-iniciante" value="iniciente" required>
+                        <label for="intermediario">Intermediário</label>
+                        <input type="radio" name="nivel" id="ctrl-intermediario" value="intermediario" required>
+                        <label for="avancado">Avançado</label>
+                        <input type="radio" name="nivel" id="avancado" value="avancado" required>
+                    </div>
+                </div>
+                <div>
+                    
+                    <label for="ctrl-biografia">Biografia/Apresentação</label>
+                    <div>
+                       <input type="text" name="biografia" id="ctrl-biografia" value="Conte um pouco sobre suas experiências">
+                    </div>
+                </div>
+                <div>
+                    <br><input type="checkbox" name="novidades" id="ctrl-novidades" value="true">
+                    <label for="ctrl-novidades">Aceito receber novidades por e-mails</label></br>
+                </div>
+
+
+
+                <br><button type="submit">Concluir Cadastro</button>
+                <button type="reset">Limpar Formulário</button></br>
+            </form>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
